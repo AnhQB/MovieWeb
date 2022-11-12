@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"   
+xmlns="http://java.sun.com/xml/ns/persistence" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="ASMJAVA4" transaction-type="RESOURCE_LOCAL">
+		<class>poly.com.entity.Comment</class>
+		<class>poly.com.entity.Favorite</class>
+		<class>poly.com.entity.Share</class>
+		<class>poly.com.entity.Users</class>
+		<class>poly.com.entity.Videos</class>
+		<class>poly.com.entity.FavoriteByYear</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver"
+				value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+			<property name="javax.persistence.jdbc.url" 
+				value="jdbc:sqlserver://localhost:1433;databaseName=ASMJAVA4" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value="12345678"/>
+		</properties>
+	</persistence-unit>
+</persistence>
